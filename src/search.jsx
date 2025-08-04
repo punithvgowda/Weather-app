@@ -11,6 +11,8 @@ function Search({updateinfo}){
         const[city,setCity]=useState(" ");          
         const api_url="https://api.openweathermap.org/data/2.5/weather";
         const api_key="7a7d9b180f70e0a3e92007a04d6837a3";
+         
+        //fetchinf function
         let getinfo=async ()=>{
             let response=await fetch(`${api_url}?q=${city}&appid=${api_key}&units=metric`);
             console.log(response);
