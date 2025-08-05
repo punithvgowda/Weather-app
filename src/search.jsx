@@ -36,7 +36,7 @@ function Search({updateinfo}){
     event.preventDefault();
         setCity(" ");
         getinfo();
-        let info =await getinfo();
+        let info = await getinfo();
 
         await updateinfo(info);
 
